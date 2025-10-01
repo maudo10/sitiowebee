@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TechSolutions S.A.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        header img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            filter: brightness(60%);
+        }
+
+        header .text-header {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+        }
+
+        header h1 { font-size: 48px; margin-bottom: 10px; }
+        header p { font-size: 20px; }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 { color: #0073e6; margin-bottom: 20px; font-size: 28px; }
+
+        .servicios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .servicio-item {
+            background: #e7f0ff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .servicio-item img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .info p { font-size: 18px; margin: 10px 0; }
+
+        footer {
+            background: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 36px; }
+            header p { font-size: 16px; }
+            .servicio-item { width: 100%; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://picsum.photos/1400/300?grayscale" alt="Banner empresa">
+    <div class="text-header">
+        <h1>TechSolutions S.A.</h1>
+        <p>Ofrecemos soluciones tecnológicas innovadoras para empresas y particulares, adaptadas a tus necesidades.</p>
+    </div>
+</header>
+
+<section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicios">
+        <div class="servicio-item">
+            <img src="https://picsum.photos/200/120?random=1" alt="Desarrollo Web">
+            <p>Desarrollo Web</p>
+        </div>
+        <div class="servicio-item">
+            <img src="https://picsum.photos/200/120?random=2" alt="Soporte Técnico">
+            <p>Soporte Técnico</p>
+        </div>
+        <div class="servicio-item">
+            <img src="https://picsum.photos/200/120?random=3" alt="Mantenimiento de Equipos">
+            <p>Mantenimiento de Equipos</p>
+        </div>
+        <div class="servicio-item">
+            <img src="https://picsum.photos/200/120?random=4" alt="Consultoría IT">
+            <p>Consultoría IT</p>
+        </div>
+    </div>
+</section>
+
+<section id="informacion">
+    <h2>Información de Contacto</h2>
+    <div class="info">
+        <p>📞 Teléfono: +503 1234-5678</p>
+        <p>✉ Correo: contacto@techsolutions.com</p>
+        <p>📍 Dirección: Avenida Tecnológica #123, San Salvador, El Salvador</p>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 TechSolutions S.A. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
